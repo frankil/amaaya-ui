@@ -4,87 +4,92 @@
 
 @layer base {
   :root {
-    /* Aura Design System — refined */
-    --background: 30 30% 98%;
-    --foreground: 30 20% 10%;
+    /* muse v3a Heirloom — oxblood + antique gold + emerald.
+       HSL triplets consumed via hsl(var(--token)). */
 
-    --card: 0 0% 100%;
-    --card-foreground: 30 20% 10%;
+    --background:           36 32% 96%;
+    --foreground:           18 28% 12%;
+    --card:                 36 30% 94%;
+    --card-foreground:      18 28% 12%;
+    --popover:              36 34% 97%;
+    --popover-foreground:   18 28% 12%;
+    --primary:               0 55% 30%;
+    --primary-foreground:   36 38% 96%;
+    --secondary:            15 55% 52%;
+    --secondary-foreground: 36 38% 96%;
+    --muted:                36 22% 90%;
+    --muted-foreground:     18 15% 38%;
+    --accent:               42 55% 52%;
+    --accent-foreground:    18 28% 12%;
+    --destructive:           4 70% 42%;
+    --destructive-foreground: 36 38% 96%;
+    --success:             155 45% 28%;
+    --border:               36 20% 86%;
+    --input:                36 20% 86%;
+    --ring:                  0 55% 30%;
+    --radius:               0.875rem;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 30 20% 10%;
+    /* Aura Extended Palette — retuned for v3a Heirloom. */
+    --aura-fire:             0 55% 30%;
+    --aura-gold:            42 55% 52%;
+    --aura-rose:             8 35% 55%;
+    --aura-sage:           155 45% 28%;
+    --aura-ai:              38 40% 55%;
+    --aura-ai-surface:      36 35% 93%;
+    --aura-ink:             18 28% 12%;
+    --aura-ink-muted:       18 15% 38%;
+    --aura-surface-alt:     42 55% 52%;
+    --aura-celeb:           42 55% 52%;
+    --aura-editorial:       18 28% 12%;
 
-    --primary: 12 80% 55%;
-    --primary-foreground: 0 0% 100%;
+    /* Shadows — warm oxblood-tinted, never cool gray. */
+    --shadow-card:     0 4px 12px hsl(18 90% 12% / 0.10), 0 1px 3px hsl(18 90% 12% / 0.06);
+    --shadow-elevated: 0 16px 40px hsl(18 90% 12% / 0.20), 0 4px 10px hsl(18 90% 12% / 0.10);
+    --shadow-soft:     0 6px 24px hsl(18 90% 12% / 0.08);
+    --shadow-glow-fire: 0 6px 22px hsl(0 55% 30% / 0.30);
+    --shadow-glow-ai:   0 4px 16px hsl(38 40% 55% / 0.25);
 
-    --secondary: 25 30% 95%;
-    --secondary-foreground: 30 20% 10%;
-
-    --muted: 25 20% 94%;
-    --muted-foreground: 25 10% 45%;
-
-    --accent: 264 32% 55%;
-    --accent-foreground: 0 0% 100%;
-
-    --destructive: 0 72% 55%;
-    --destructive-foreground: 0 0% 100%;
-
-    --border: 30 15% 90%;
-    --input: 30 15% 88%;
-    --ring: 12 80% 55%;
-
-    --radius: 1rem;
-
-    /* Aura Extended Palette */
-    --aura-fire: 12 80% 55%;
-    --aura-gold: 38 85% 58%;
-    --aura-rose: 340 55% 72%;
-    --aura-sage: 150 25% 42%;
-    --aura-ai: 264 32% 55%;
-    --aura-ai-surface: 264 40% 97%;
-    --aura-ink: 30 20% 10%;
-    --aura-ink-muted: 25 10% 45%;
-    --aura-surface-alt: 25 30% 95%;
-    --aura-celeb: 45 90% 55%;
-    --aura-editorial: 350 65% 58%;
-
-    /* Shadows */
-    --shadow-card: 0 1px 8px -2px hsl(30 20% 10% / 0.06);
-    --shadow-elevated: 0 6px 24px -6px hsl(30 20% 10% / 0.10);
-    --shadow-glow-fire: 0 4px 16px -4px hsl(12 80% 55% / 0.25);
-    --shadow-glow-ai: 0 4px 16px -4px hsl(264 32% 55% / 0.25);
+    /* Custom palette tokens — Heirloom-aligned. */
+    --glow:      18 50% 75%;
+    --sage:     155 45% 28%;
+    --cream:     36 30% 94%;
+    --warm-gray: 18 15% 38%;
+    --blush:      8 35% 80%;
+    --gold:      42 60% 55%;
 
     /* Sidebar tokens */
-    --sidebar-background: 30 30% 98%;
-    --sidebar-foreground: 30 20% 10%;
-    --sidebar-primary: 12 80% 55%;
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 25 30% 95%;
-    --sidebar-accent-foreground: 30 20% 10%;
-    --sidebar-border: 30 15% 90%;
-    --sidebar-ring: 12 80% 55%;
+    --sidebar-background:         36 30% 94%;
+    --sidebar-foreground:         18 28% 12%;
+    --sidebar-primary:             0 55% 30%;
+    --sidebar-primary-foreground: 36 38% 96%;
+    --sidebar-accent:             42 55% 52%;
+    --sidebar-accent-foreground:  18 28% 12%;
+    --sidebar-border:             36 20% 86%;
+    --sidebar-ring:                0 55% 30%;
   }
 
   .dark {
-    --background: 30 15% 7%;
-    --foreground: 30 10% 92%;
-    --card: 30 12% 11%;
-    --card-foreground: 30 10% 92%;
-    --popover: 30 12% 11%;
-    --popover-foreground: 30 10% 92%;
-    --primary: 12 80% 55%;
-    --primary-foreground: 0 0% 100%;
-    --secondary: 30 12% 15%;
-    --secondary-foreground: 30 10% 92%;
-    --muted: 30 12% 15%;
-    --muted-foreground: 25 10% 55%;
-    --accent: 264 32% 55%;
-    --accent-foreground: 0 0% 100%;
-    --destructive: 0 62% 35%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 30 12% 18%;
-    --input: 30 12% 18%;
-    --ring: 12 80% 55%;
+    /* muse v3a Heirloom — dark variant. */
+    --background:           18 25% 8%;
+    --foreground:           36 30% 92%;
+    --card:                 18 22% 11%;
+    --card-foreground:      36 30% 92%;
+    --popover:              18 22% 9%;
+    --popover-foreground:   36 30% 92%;
+    --primary:               0 65% 55%;
+    --primary-foreground:   18 25% 8%;
+    --secondary:            15 60% 60%;
+    --secondary-foreground: 18 25% 8%;
+    --muted:                18 15% 18%;
+    --muted-foreground:     36 18% 65%;
+    --accent:               42 60% 62%;
+    --accent-foreground:    18 25% 8%;
+    --destructive:           4 65% 55%;
+    --destructive-foreground: 36 30% 92%;
+    --success:             155 45% 50%;
+    --border:               18 15% 22%;
+    --input:                18 15% 22%;
+    --ring:                  0 65% 55%;
   }
 }
 
@@ -95,23 +100,23 @@
 
   body {
     @apply bg-background text-foreground;
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fraunces', serif;
   }
 }
 
 @layer utilities {
   .font-display {
-    font-family: 'Cormorant Garamond', serif;
+    font-family: 'Fraunces', serif;
   }
 
   .font-body {
-    font-family: 'Plus Jakarta Sans', sans-serif;
+    font-family: 'Inter', sans-serif;
   }
 
   .font-mono-data {
