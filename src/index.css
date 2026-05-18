@@ -15,7 +15,7 @@
     --popover-foreground:   18 28% 12%;
     --primary:               0 55% 30%;
     --primary-foreground:   36 38% 96%;
-    --secondary:            15 55% 52%;
+    --secondary:             0 50% 42%;   /* oxblood spine — consistent with consumer app */
     --secondary-foreground: 36 38% 96%;
     --muted:                36 22% 90%;
     --muted-foreground:     18 15% 38%;
@@ -78,7 +78,7 @@
     --popover-foreground:   36 30% 92%;
     --primary:               0 65% 55%;
     --primary-foreground:   18 25% 8%;
-    --secondary:            15 60% 60%;
+    --secondary:             0 55% 55%;   /* oxblood spine — dark mode */
     --secondary-foreground: 18 25% 8%;
     --muted:                18 15% 18%;
     --muted-foreground:     36 18% 65%;
